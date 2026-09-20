@@ -4,8 +4,6 @@ library(tidyverse)
 
 works <- gutenberg_works()
 
-# В каждом пункте используйте оператор pipe, не сохраняйте промежуточные результаты!
-
 # (1) Отберите ряды, в которых gutenberg_author_id равен 65 или 410; после этого выберите два столбца: author, title
 my_data <- works |> 
   filter(gutenberg_author_id == 65 | gutenberg_author_id == 410) |> 
